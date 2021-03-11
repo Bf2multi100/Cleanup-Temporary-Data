@@ -17,7 +17,7 @@ $disk.Size / 1GB
  "Disk Free Space Pre Cleanup" 
  $disk.FreeSpace / 1GB
 
-$tempfolders = @("C:\Windows\Temp\*","C:\Users\*\AppData\Roaming\Local\Microsoft\Windows\InetCache\Content.IE5","C:\Users\*\AppData\Local\Google\Chrome\User Data\*\Cache","C:\Users\Samuel\AppData\Local\Temp")
+$tempfolders = @("C:\Windows\Temp\*","C:\Users\*\AppData\Roaming\Local\Microsoft\Windows\InetCache\Content.IE5","C:\Users\*\AppData\Local\Google\Chrome\User Data\*\Cache","C:\Users\*\AppData\Local\Temp")
 Remove-Item $tempfolders -force -recurse -verbose
 
 $disk = Get-WmiObject Win32_LogicalDisk -Filter "DeviceID='C:'" | Select-Object Size,FreeSpace
