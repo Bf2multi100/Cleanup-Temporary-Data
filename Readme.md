@@ -1,8 +1,11 @@
 This powershell script will cleanup the following directories:
 
 C:\Windows\Temp\*
+
 C:\Users\*\AppData\Roaming\Local\Microsoft\Windows\InetCache\Content.IE5
+
 C:\Users\*\AppData\Local\Google\Chrome\User Data\*\Cache
+
 C:\Users\*\AppData\Local\Temp
 
 
